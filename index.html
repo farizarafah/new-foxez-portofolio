@@ -103,10 +103,7 @@ dialog[data-single="true"] .nv,dialog[data-single="true"] #cnt{display:none}
 header{flex-wrap:wrap;gap:.8rem 1.5rem}
 nav a[aria-current="page"]{color:var(--fg);border-bottom:2px solid transparent;border-image:linear-gradient(90deg,var(--accent),transparent) 1;padding-bottom:.2rem}
 .page[hidden]{display:none}
-.mg{columns:3;column-gap:1.6rem}
-@media(max-width:980px){.mg{columns:2}}
-@media(max-width:560px){.mg{columns:1}}
-.mg .tile{break-inside:avoid;margin:0 0 2rem}
+.mg{display:flex;gap:1.6rem;align-items:flex-start} / .mc{flex:1;min-width:0} / .mg .tile{margin:0 0 2rem}
 .mg .m::after{content:"Tonton"}
 .yw{position:relative;aspect-ratio:16/9;max-width:100%;background:var(--c1,#000);overflow:hidden}
 .yw.v{aspect-ratio:9/16;height:68vh;margin:0 auto}
@@ -244,7 +241,7 @@ function chips(fid,gid,KN){
   f.addEventListener("click",e=>{
     const b=e.target.closest("button");if(!b)return;
     f.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
-    $(gid).querySelectorAll(".tile").forEach(t=>t.hidden=!(b.dataset.k==="all"||t.dataset.k===b.dataset.k));
+    $(gid).querySelectorAll(".tile").forEach(t=>t.hidden=!(b.dataset.k==="all"||t.dataset.k===b.dataset.k));if(after)after(); (tambahkan if(after)after();));
   });
 }
 function tile(gid,cat,t,d,style,child,fn){
@@ -278,13 +275,27 @@ function gallery(gid,fid,PR,KN,k){chips(fid,gid,KN);PR.forEach(p=>tile(gid,p.k,p
 gallery("cgrid","cfilters",PR_C,KN_C,"c");
 gallery("ggrid","gfilters",PR_G,KN_G,"g");
 /* motion: preview loop di grid, YouTube di popup */
-chips("mfilters","mgrid",KN_C);
+chips("mfilters","mgrid",KN_C,layoutM);
 ITEMS.forEach(it=>{
   let ch;
   if(it.v){ch=document.createElement("video");ch.src=it.v+".mp4";ch.poster=it.v+".webp";ch.loop=true;ch.muted=true;ch.playsInline=true;ch.preload="metadata"}
   else ch=phEl("p"+it.p);
   tile("mgrid",it.k,it.t,it.m,"aspect-ratio:"+it.ar+";"+cv(it.c),ch,()=>openY(it));
 });
+
+   const MT=[...document.querySelectorAll("#mgrid .tile")];
+MT.forEach((t,i)=>{const r=ITEMS[i].ar.split("/");t._h=r[1]/r[0]+.25});
+let MN=0;
+const colsN=()=>innerWidth<=560?1:innerWidth<=980?2:3;
+function layoutM(){
+  const n=colsN(),h=Array(n).fill(0);
+  const cols=h.map(()=>{const c=document.createElement("div");c.className="mc";return c});
+  MT.filter(t=>!t.hidden).forEach(t=>{const j=h.indexOf(Math.min(...h));cols[j].append(t);h[j]+=t._h});
+  $("mgrid").replaceChildren(...cols);MN=n;
+}
+layoutM();
+addEventListener("resize",()=>{if(colsN()!==MN)layoutM()});
+   
 function openY(it){
   const id=yid(it.y),w=$("yw");
   w.className="yw"+(it.ar==="9/16"?" v":"");w.style.cssText=cv(it.c);
