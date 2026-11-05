@@ -175,7 +175,8 @@ nav a[aria-current="page"]{color:var(--fg);border-bottom:2px solid transparent;b
 /* Karya dikelola lewat halaman /admin (CMS). Datanya ada di folder content/.
    Kategori diatur di KN_C dan KN_G di bawah ini. */
 const PAL=[["#FFE1CC","#FF7A2B","#17171A"],["#17171A","#FFB27A","#FFFFFF"],["#FFF4EC","#FF9A55","#E8501A"],["#FF7A2B","#FFFFFF","#17171A"],["#F1EEEA","#17171A","#FF7A2B"],["#FFC9A3","#E8501A","#FFF4EC"]];
-const KN_C={bumper:"Bumper event",explainer:"Video explainer",motion:"Motion graphics"};
+const KN_M={bumper:"Bumper event",explainer:"Video explainer",motion:"Motion graphics"};
+const KN_C={transportasi:"Transportasi dan Logistik",perdagangan:"Perdagangan dan Distribusi",industri:"Industri dan Rekayasa",konstruksi:"Konstruksi dan Infrastruktur",perkebunan:"Perkebunan dan Pertanian",fnb:"Makanan dan Minuman",properti:"Properti dan Real Estate",teknologi:"Teknologi dan Informasi",jasa:"Jasa Profesional dan Konsultan",lainnya:"Lainnya"};
 const KN_G={idcard:"ID card design",event:"Event design",instagram:"Instagram design",logo:"Logo and branding",presentation:"Presentation",
 /* rekomendasi tambahan, hapus baris yang tidak dipakai */
 poster:"Poster and flyer",packaging:"Packaging and label",merch:"Merchandise",print:"Brochure and catalog"};
@@ -210,7 +211,7 @@ function chips(fid,gid,KN,after){
   f.addEventListener("click",e=>{
     const b=e.target.closest("button");if(!b)return;
     f.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",x===b));
-    $(gid).querySelectorAll(".tile").forEach(t=>t.hidden=!(b.dataset.k==="all"||t.dataset.k===b.dataset.k));if(after)after();
+    (gid==="mgrid"?MT:$(gid).querySelectorAll(".tile")).forEach(t=>t.hidden=!(b.dataset.k==="all"||t.dataset.k===b.dataset.k));if(after)after();
   });
 }
 function tile(gid,cat,t,d,style,child,fn){
@@ -244,7 +245,7 @@ function gallery(gid,fid,PR,KN,k){chips(fid,gid,KN);PR.forEach(p=>tile(gid,p.k,p
 gallery("cgrid","cfilters",PR_C,KN_C,"c");
 gallery("ggrid","gfilters",PR_G,KN_G,"g");
 /* motion: preview loop di grid, YouTube di popup */
-chips("mfilters","mgrid",KN_C,layoutM);
+chips("mfilters","mgrid",KN_M,layoutM);
 ITEMS.forEach(it=>{
   let ch;
   if(it.v){ch=document.createElement("video");ch.src=it.v;if(it.poster)ch.poster=it.poster;ch.loop=true;ch.muted=true;ch.playsInline=true;ch.preload="metadata"}
@@ -260,6 +261,7 @@ function layoutM(){
   const cols=h.map(()=>{const c=document.createElement("div");c.className="mc";return c});
   MT.filter(t=>!t.hidden).forEach(t=>{const j=h.indexOf(Math.min(...h));cols[j].append(t);h[j]+=t._h});
   $("mgrid").replaceChildren(...cols);MN=n;
+  MT.filter(t=>!t.hidden).forEach(t=>{const x=t.querySelector(".m");io.unobserve(x);io.observe(x)});
 }
 layoutM();
 addEventListener("resize",()=>{if(colsN()!==MN)layoutM()});
