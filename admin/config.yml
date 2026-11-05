@@ -1,0 +1,80 @@
+# Ganti USERNAME/NAMA-REPO dengan repo GitHub kamu, contoh: foxezstudio/website
+backend:
+  name: github
+  repo: USERNAME/NAMA-REPO
+  branch: main
+media_folder: work
+public_folder: /work
+media_libraries:
+  default:
+    config:
+      transformations:
+        raster_image:
+          format: webp
+          quality: 80
+collections:
+  - name: karya
+    label: Karya
+    files:
+      - name: motion
+        label: Motion
+        file: content/motion.json
+        format: json
+        fields:
+          - label: Daftar karya
+            name: items
+            widget: list
+            label_singular: karya
+            summary: "{{fields.title}}"
+            fields:
+              - {label: Judul, name: title, widget: string}
+              - {label: Keterangan (contoh Bumper event · 10 dtk), name: meta, widget: string, required: false}
+              - {label: Kategori, name: category, widget: select, options: [{label: Bumper event, value: bumper}, {label: Video explainer, value: explainer}, {label: Motion graphics, value: motion}]}
+              - {label: Rasio kotak di grid, name: ratio, widget: select, default: "16/9", options: [{label: "16:9 landscape lebar", value: "16/9"}, {label: "16:10 landscape", value: "16/10"}, {label: "1:1 kotak", value: "1/1"}, {label: "4:5 potret", value: "4/5"}, {label: "9:16 vertikal tinggi", value: "9/16"}]}
+              - {label: Preview video (MP4 pendek, tanpa suara), name: video, widget: file, required: false}
+              - {label: Poster preview (opsional), name: poster, widget: image, required: false}
+              - {label: Link video YouTube (diputar saat diklik), name: youtube, widget: string, required: false}
+      - name: company
+        label: Company Profile
+        file: content/company.json
+        format: json
+        fields:
+          - label: Daftar karya
+            name: items
+            widget: list
+            label_singular: karya
+            summary: "{{fields.title}}"
+            fields:
+              - {label: Judul, name: title, widget: string}
+              - {label: Deskripsi singkat (tampil di bawah judul), name: description, widget: string, required: false}
+              - {label: Kategori, name: category, widget: select, options: [{label: Bumper event, value: bumper}, {label: Video explainer, value: explainer}, {label: Motion graphics, value: motion}]}
+              - label: Slide (slide pertama jadi sampul di grid)
+                name: slides
+                widget: list
+                label_singular: slide
+                summary: "{{fields.caption}}"
+                fields:
+                  - {label: Gambar atau video MP4, name: file, widget: file, required: false}
+                  - {label: Caption, name: caption, widget: string, required: false}
+      - name: graphic
+        label: Graphic Design
+        file: content/graphic.json
+        format: json
+        fields:
+          - label: Daftar karya
+            name: items
+            widget: list
+            label_singular: karya
+            summary: "{{fields.title}}"
+            fields:
+              - {label: Judul, name: title, widget: string}
+              - {label: Deskripsi singkat (tampil di bawah judul), name: description, widget: string, required: false}
+              - {label: Kategori, name: category, widget: select, options: [{label: ID card design, value: idcard}, {label: Event design, value: event}, {label: Instagram design, value: instagram}, {label: Logo and branding, value: logo}, {label: Presentation, value: presentation}, {label: Poster and flyer, value: poster}, {label: Packaging and label, value: packaging}, {label: Merchandise, value: merch}, {label: Brochure and catalog, value: print}]}
+              - label: Slide (slide pertama jadi sampul di grid)
+                name: slides
+                widget: list
+                label_singular: slide
+                summary: "{{fields.caption}}"
+                fields:
+                  - {label: Gambar atau video MP4, name: file, widget: file, required: false}
+                  - {label: Caption, name: caption, widget: string, required: false}

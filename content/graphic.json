@@ -1,0 +1,159 @@
+{
+  "items": [
+    {
+      "title": "ID Card Karyawan Perusahaan Logistik",
+      "description": "Kartu identitas dengan foto, jabatan, dan kode QR.",
+      "category": "idcard",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Tampak depan: foto, nama, dan jabatan."
+        },
+        {
+          "file": "",
+          "caption": "Tampak belakang: kode QR dan ketentuan."
+        }
+      ]
+    },
+    {
+      "title": "Backdrop Seminar Teknologi",
+      "description": "Backdrop panggung, banner, dan penunjuk arah.",
+      "category": "event",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Backdrop utama berukuran 6 x 3 meter."
+        },
+        {
+          "file": "",
+          "caption": "Banner pembicara dan sponsor."
+        },
+        {
+          "file": "",
+          "caption": "Penunjuk arah dan name tag peserta."
+        }
+      ]
+    },
+    {
+      "title": "Konten Instagram Brand Kopi",
+      "description": "Template feed dan carousel yang konsisten.",
+      "category": "instagram",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Cover carousel dengan judul besar."
+        },
+        {
+          "file": "",
+          "caption": "Halaman isi dengan satu pesan per slide."
+        },
+        {
+          "file": "",
+          "caption": "Highlight cover untuk profil."
+        }
+      ]
+    },
+    {
+      "title": "Identitas Brand Kopi Lokal",
+      "description": "Logo, palet warna, dan panduan penggunaan.",
+      "category": "logo",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Logo utama dan versi ikon."
+        },
+        {
+          "file": "",
+          "caption": "Palet warna dan pasangan huruf."
+        },
+        {
+          "file": "",
+          "caption": "Penerapan pada cup dan tote bag."
+        }
+      ]
+    },
+    {
+      "title": "Pitch Deck Startup Logistik",
+      "description": "Slide deck 24 halaman untuk presentasi investor.",
+      "category": "presentation",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Slide pembuka dengan inti pesan."
+        },
+        {
+          "file": "",
+          "caption": "Grafik pasar dan proyeksi."
+        },
+        {
+          "file": "",
+          "caption": "Slide tim dan langkah berikutnya."
+        }
+      ]
+    },
+    {
+      "title": "Poster Festival Musik",
+      "description": "Poster utama dan turunan untuk media cetak dan digital.",
+      "category": "poster",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Poster utama ukuran A3."
+        },
+        {
+          "file": "",
+          "caption": "Versi flyer A5 dan story."
+        }
+      ]
+    },
+    {
+      "title": "Kemasan Cokelat Artisan",
+      "description": "Label dan kemasan untuk produk cokelat.",
+      "category": "packaging",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Kemasan utama dengan tiga varian rasa."
+        },
+        {
+          "file": "",
+          "caption": "Label dan stiker segel."
+        }
+      ]
+    },
+    {
+      "title": "Merchandise Komunitas Desain",
+      "description": "Kaos, tote bag, dan stiker untuk anggota.",
+      "category": "merch",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Desain kaos tampak depan dan belakang."
+        },
+        {
+          "file": "",
+          "caption": "Tote bag dan lembar stiker."
+        }
+      ]
+    },
+    {
+      "title": "Katalog Produk Furnitur",
+      "description": "Katalog 32 halaman siap cetak.",
+      "category": "print",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Sampul dan daftar isi."
+        },
+        {
+          "file": "",
+          "caption": "Halaman produk dengan spesifikasi."
+        },
+        {
+          "file": "",
+          "caption": "Halaman kontak dan peta toko."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "items": [
+    {
+      "title": "Opening Konser Musik",
+      "description": "Bumper event untuk panggung utama, 10 detik.",
+      "category": "bumper",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Opening bumper: bola memantul menjadi logo acara."
+        },
+        {
+          "file": "",
+          "caption": "Transisi antar penampil di layar LED."
+        },
+        {
+          "file": "",
+          "caption": "Versi vertikal untuk Instagram Stories."
+        }
+      ]
+    },
+    {
+      "title": "Cara Kerja Aplikasi Keuangan",
+      "description": "Video explainer 90 detik untuk pengguna baru.",
+      "category": "explainer",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Adegan pembuka: masalah yang dihadapi pengguna."
+        },
+        {
+          "file": "",
+          "caption": "Alur fitur utama dijelaskan langkah demi langkah."
+        },
+        {
+          "file": "",
+          "caption": "Penutup dengan ajakan mengunduh aplikasi."
+        }
+      ]
+    },
+    {
+      "title": "Identitas Animasi Brand Kopi",
+      "description": "Logo animation dan sistem gerak untuk brand kopi lokal.",
+      "category": "motion",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Logo reveal berdurasi 6 detik."
+        },
+        {
+          "file": "",
+          "caption": "Pola gerak untuk judul dan transisi."
+        },
+        {
+          "file": "",
+          "caption": "Penerapan di konten media sosial."
+        }
+      ]
+    },
+    {
+      "title": "Seminar Teknologi Tahunan",
+      "description": "Paket bumper, lower third, dan countdown.",
+      "category": "bumper",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Countdown 10 detik sebelum sesi dimulai."
+        },
+        {
+          "file": "",
+          "caption": "Lower third untuk nama dan jabatan pembicara."
+        }
+      ]
+    },
+    {
+      "title": "Onboarding Produk SaaS",
+      "description": "Explainer 75 detik dengan ilustrasi 2D.",
+      "category": "explainer",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Ilustrasi dashboard dan alur kerja tim."
+        },
+        {
+          "file": "",
+          "caption": "Fitur kolaborasi dalam satu layar."
+        },
+        {
+          "file": "",
+          "caption": "Ringkasan manfaat di akhir video."
+        }
+      ]
+    },
+    {
+      "title": "Infografis Laporan Tahunan",
+      "description": "Grafis data animasi untuk presentasi dan media sosial.",
+      "category": "motion",
+      "slides": [
+        {
+          "file": "",
+          "caption": "Grafik pertumbuhan yang bergerak per kuartal."
+        },
+        {
+          "file": "",
+          "caption": "Angka kunci dalam format vertikal."
+        }
+      ]
+    }
+  ]
+}
