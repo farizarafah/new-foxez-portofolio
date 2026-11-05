@@ -1,6 +1,15 @@
 {
   "items": [
     {
+      "title": "MToyota - Explainer Video",
+      "meta": "Video Explainer untuk aplikasi MToyota",
+      "category": "explainer",
+      "ratio": "4/5",
+      "video": "/work/mtoyota.mp4",
+      "poster": "",
+      "youtube": ""
+    },
+    {
       "title": "Isuzu Elf - Instagram Ads Content",
       "meta": "Isuzu Elf - Instagram Ads Content",
       "category": "motion",
@@ -87,15 +96,6 @@
       "category": "bumper",
       "ratio": "9/16",
       "video": "/work/goal.mp4",
-      "poster": "",
-      "youtube": ""
-    },
-    {
-      "title": "MToyota - Explainer Video",
-      "meta": "Video Explainer untuk aplikasi MToyota",
-      "category": "explainer",
-      "ratio": "4/5",
-      "video": "/work/mtoyota.mp4",
       "poster": "",
       "youtube": ""
     }
