@@ -47,7 +47,7 @@ collections:
             fields:
               - {label: Judul, name: title, widget: string}
               - {label: Deskripsi singkat (tampil di bawah judul), name: description, widget: string, required: false}
-              - {label: Kategori, name: category, widget: select, options: [{label: Bumper event, value: bumper}, {label: Video explainer, value: explainer}, {label: Motion graphics, value: motion}]}
+              - {label: Kategori, name: category, widget: select, options: [{label: Transportasi dan Logistik, value: transportasi}, {label: Perdagangan dan Distribusi, value: perdagangan}, {label: Industri dan Rekayasa, value: industri}, {label: Konstruksi dan Infrastruktur, value: konstruksi}, {label: Perkebunan dan Pertanian, value: perkebunan}, {label: Makanan dan Minuman, value: fnb}, {label: Properti dan Real Estate, value: properti}, {label: Teknologi dan Informasi, value: teknologi}, {label: Jasa Profesional dan Konsultan, value: jasa}, {label: Lainnya, value: lainnya}]}
               - label: Slide (slide pertama jadi sampul di grid)
                 name: slides
                 widget: list
