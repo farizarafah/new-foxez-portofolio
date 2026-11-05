@@ -3,7 +3,7 @@
     {
       "title": "PT Tarmindo Utama Mandiri",
       "description": "Company profile untuk PT Tarmindo Utama Mandiri",
-      "category": "bumper",
+      "category": "konstruksi",
       "slides": [
         {
           "file": "/work/5.webp",
@@ -22,7 +22,7 @@
     {
       "title": "Company profile untuk AHF EDU",
       "description": "Video explainer 90 detik untuk pengguna baru.",
-      "category": "explainer",
+      "category": "jasa",
       "slides": [
         {
           "file": "/work/2.webp",
@@ -39,13 +39,13 @@
       ]
     },
     {
-      "title": "Identitas Animasi Brand Kopi",
-      "description": "Logo animation dan sistem gerak untuk brand kopi lokal.",
-      "category": "motion",
+      "title": "Basfana Ridan - Company Profile",
+      "description": "Basfana Ridan - Company Profile",
+      "category": "transportasi",
       "slides": [
         {
           "file": "/work/4.webp",
-          "caption": "Logo reveal berdurasi 6 detik."
+          "caption": "Basfana Ridan - Company Profile"
         },
         {
           "file": "",
@@ -58,13 +58,13 @@
       ]
     },
     {
-      "title": "Seminar Teknologi Tahunan",
-      "description": "Paket bumper, lower third, dan countdown.",
-      "category": "bumper",
+      "title": "PT Bangka Jasa Logistik",
+      "description": "PT Bangka Jasa Logistik",
+      "category": "transportasi",
       "slides": [
         {
           "file": "/work/WhatsApp Image 2026-11-05 at 14.16.31.webp",
-          "caption": "Countdown 10 detik sebelum sesi dimulai."
+          "caption": "PT Bangka Jasa Logistik"
         },
         {
           "file": "",
