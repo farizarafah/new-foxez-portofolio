@@ -105,6 +105,28 @@
           "caption": "Angka kunci dalam format vertikal."
         }
       ]
+    },
+    {
+      "title": "[Unpublished] Company Profile untuk Barito Pacific",
+      "description": "Barito Pacific",
+      "category": "motion",
+      "slides": [
+        {
+          "file": "/work/WhatsApp Image 2026-11-05 at 14.16.34 (1).webp",
+          "caption": ""
+        }
+      ]
+    },
+    {
+      "title": "Blessing Petshop",
+      "description": "Company profile portrait A4",
+      "category": "bumper",
+      "slides": [
+        {
+          "file": "/work/WhatsApp Image 2026-11-05 at 14.16.36.webp",
+          "caption": ""
+        }
+      ]
     }
   ]
 }
